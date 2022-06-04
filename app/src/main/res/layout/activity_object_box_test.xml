@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/put"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00acff"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="put"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/addAll"/>
+    <TextView
+        android:id="@+id/addAll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00acff"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="addAll"
+        app:layout_constraintTop_toBottomOf="@id/put"
+        app:layout_constraintBottom_toTopOf="@id/query"/>
+    <TextView
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00acff"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="query"
+        app:layout_constraintTop_toBottomOf="@id/addAll"
+        app:layout_constraintBottom_toTopOf="@id/get"/>
+    <TextView
+        android:id="@+id/get"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00acff"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="get"
+        app:layout_constraintTop_toBottomOf="@id/query"
+        app:layout_constraintBottom_toTopOf="@id/remove"/>
+    <TextView
+        android:id="@+id/remove"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00acff"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="remove"
+        app:layout_constraintTop_toBottomOf="@id/get"
+        app:layout_constraintBottom_toTopOf="@id/removeIdGreater"/>
+
+    <TextView
+        android:id="@+id/removeIdGreater"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00acff"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="remove"
+        app:layout_constraintTop_toBottomOf="@id/remove"
+        app:layout_constraintBottom_toTopOf="@id/count"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00acff"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="count"
+        app:layout_constraintTop_toBottomOf="@id/remove"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

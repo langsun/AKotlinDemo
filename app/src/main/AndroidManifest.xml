@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".objectBox.ObjectBoxTestActivity" />
+        <activity android:name=".room.RoomTestActivity" />
     </application>
 
 </manifest>

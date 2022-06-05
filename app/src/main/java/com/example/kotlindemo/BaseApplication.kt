@@ -2,7 +2,7 @@ package com.example.kotlindemo
 
 import android.app.Application
 import com.example.kotlindemo.objectBox.ObjectBox
-import io.objectbox.android.Admin
+import com.example.kotlindemo.room.RoomUtil
 
 /**
  * Author: SKY
@@ -12,5 +12,7 @@ class BaseApplication: Application() {
     override fun onCreate() {
         super.onCreate()
         ObjectBox.init(this)
+
+        RoomUtil.init(this)
     }
 }

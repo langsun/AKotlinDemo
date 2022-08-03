@@ -32,12 +32,12 @@ interface RoomUserDao {
     fun queryALL(): List<RoomUser>
 
     //查询通过name
-    @Query("SELECT * FROM roomuser WHERE firstName == :name")
+    @Query("SELECT * FROM roomuser WHERE userName == :name")
     fun queryUserFromName(name: String): List<RoomUser>
 
     //查询通过age区间查询
-    @Query("SELECT * FROM roomuser WHERE age BETWEEN :minAge AND :maxAge")
-    fun queryUserBetweenAge(minAge: Int, maxAgent: Int): List<RoomUser>
+    @Query("SELECT * FROM roomuser WHERE userAge BETWEEN :minAge AND :maxAge")
+    fun queryUserBetweenAge(minAge: Int, maxAge: Int): List<RoomUser>
 
 
 }

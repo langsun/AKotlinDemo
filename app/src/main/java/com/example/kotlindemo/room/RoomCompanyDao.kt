@@ -11,5 +11,5 @@ import androidx.room.*
 interface RoomCompanyDao {
     //查询所有
     @Query("SELECT * FROM roomcompany")
-    fun queryALL(): List<RoomUser>
+    fun queryALL(): List<RoomCompany>
 }

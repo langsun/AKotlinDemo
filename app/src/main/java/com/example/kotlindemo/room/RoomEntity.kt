@@ -31,8 +31,8 @@ data class RoomCompany(
     @ColumnInfo(name = "personName")
     var name: String ,
     //@Embedded 用于对象直接嵌套
-    @Embedded
-    var address: Address,
+//    @Embedded
+//    var address: Address,
 )
 
 @Entity
@@ -42,6 +42,6 @@ data class Address(
     var province: String,
     var city: String,
     //@Ignore 不存入数据库
-    @Ignore
-    var district: String
+//    @Ignore
+//    var district: String = ""
 )
